@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="is-family-primary">
+
+    <div id="background_img"></div>
+    <div id="background_overlay"></div>
+    <div id="background_pattern"></div>
+
+    <div class="error-msg">
+
+    </div>
+
+    <!-- nav -->
+    <section class="hero nav-bg">
+        <nav class="navbar is-dark ">
+            <div class="container mt-1">
+                <div class="navbar-brand">
+                    <a href="/home.html" class="navbar-item brand-bg has-text-centered">
+                        <figure class="">
+                            <img class="has-ratio" width="50" src="/image/logo.png" alt="Cargotechs" />
+                            </iframe>
+                        </figure>
+                        <span class="mb-3 ml-3 is-size-3 is-size-4-mobile has-text-weight-semibold">CargoTechs</span>
+                    </a>
+                    <span class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navMenu" class="navbar-menu nav-bg">
+                    <div class="navbar-end">
+                        <a href="#" class="navbar-item brand-bg has-text-light">Why CargoTechs</a>
+                        <a href="#" class="navbar-item brand-bg has-text-light">Products & Solutions</a>
+                        <a href="#" class="navbar-item brand-bg has-text-light">FAQ</a>
+                        <a href="#" class="navbar-item brand-bg has-text-light">career</a>
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button hvr is-link is-outlined" href="index.html">
+                                    <strong>Sign Up</strong>
+                                </a>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    </section>
+    <!-- end nav -->
+
+    <!--login form -->
+    <section class="hero-body mt-5">
+        <div class="container has-text-centered is-flex jsc">
+            <div class="card p-5 box-shadow has-background-black" style="width: 400px;">
+                <div class="card-image is-flex jsc">
+                    <figure class="image">
+                        <img src="https://cargotechs.com/wp-content/uploads/2024/02/cargotech_icons-01.svg"
+                            alt="CargoTechs" />
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media is-flex jsc">
+                        <div class="is-size-3 has-text-weight-bold has-text-link">
+                            Log In
+                        </div>
+                    </div>
+
+                    <form class="loginform">
+
+                        <div class="content">
+                            <div class="field">
+                                <p class="control has-icons-left has-icons-right">
+                                    <input class="input" type="email" placeholder="Email" name="email">
+                                    <span class="icon is-small is-left">
+                                        <i class="fa-light fa-at"></i>
+                                    </span>
+                                    <span class="icon is-small is-right">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                </p>
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="field">
+                                <p class="control has-icons-left">
+                                    <input class="input" name="password" type="password" placeholder="Password"
+                                        required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </p>
+                            </div>
+
+                            <div class="field">
+                                <div class="is-flex is-justify-content-space-between">
+                                    <div class="cell">
+                                        <label class="checkbox">
+                                            <input type="checkbox" />
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <div class="cell">
+                                        <a href="/" class="">Forget Password?</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="field lgn-button">
+                                <button class="button is-success is-fullwidth">
+                                    Login
+                                </button>
+                            </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+    <!-- end form -->
+
+    <!-- script end -->
+    <script src="/js/login.js"></script>
+    <script src="/js/style.js"></script>
+</body>
+
+</html>

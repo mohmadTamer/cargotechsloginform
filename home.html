@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/side.css" />
+</head>
+
+<body class="is-family-primary">
+
+    <!-- background layout -->
+    <div id="background_img"></div>
+    <div id="background_overlay"></div>
+    <div id="background_pattern"></div>
+
+    <!-- nav -->
+    <section class="hero nav-bg">
+        <nav class="navbar is-fixed-top is-dark">
+            <div class="container mt-1">
+                <div class="navbar-brand">
+                    <a href="/" class="navbar-item brand-bg has-text-centered">
+                        <figure class="">
+                            <img class="has-ratio" width="50" src="/image/logo.png" alt="Cargotechs" />
+                            </iframe>
+                        </figure>
+                        <span class="mb-3 ml-3 is-size-3 is-size-4-mobile has-text-weight-semibold">CargoTechs</span>
+                    </a>
+                    <span class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navMenu" class="navbar-menu nav-bg">
+                    <div class="navbar-end">
+                        <a href="#" class="navbar-item brand-bg has-text-light">Why CargoTechs</a>
+                        <a href="#" class="navbar-item brand-bg has-text-light">Blogs</a>
+                        <a href="#" class="navbar-item brand-bg has-text-light">FAQ</a>
+                        <a href="#" class="navbar-item brand-bg has-text-light">career</a>
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <button class="button hvr is-link is-outlined" onclick="destroySession()">
+                                    <strong>Log Out</strong>
+                                </button>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- end nav -->
+
+    <!-- sidebar and info card -->
+    <div class="columns is-variable is-0">
+        <div>
+            <div class="menu-container pdx-1 has-background-transparent box-shadow">
+                <div class="menu-wrapper pdy-1">
+                    <aside class="menu">
+                        <p class="menu-label has-text-lighter">Products & solutions</p>
+                        <ul class="">
+                            <li>
+                                <a href="#" class="has-text-white">
+                                    <i class="fa-solid fa-plane"></i>
+                                    Air</a>
+                            </li>
+                        </ul>
+                        <ul class="">
+                            <li>
+                                <a href="#" class="has-text-white">
+                                    <i class="fa-solid fa-ship"></i>
+                                    Sea</a>
+                            </li>
+                            <li>
+                                <a href="#" class="has-text-white">
+                                    <i class="fa-solid fa-truck"></i>
+                                    Land</a>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="has-text-white">
+                                            <i class="fa-solid fa-boxes-stacked"></i>
+                                            Logistics</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p class="menu-label has-text-lighter">Tools</p>
+                        <ul class="">
+                            <li>
+                                <a href="#" class="has-text-white">
+                                    <i class="fa-solid fa-weight-scale"></i>
+                                    Weight Calculator</a>
+                            </li>
+                            <li>
+                                <a href="#" class="has-text-white">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    Shipment Tracking</a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <!-- end sidebar -->
+
+        <!--user info section -->
+
+        <!-- user info card -->
+        <div class="column is-10-desktop mar is-offset-2-desktop is-9-tablet is-offset-3-tablet is-12-mobile">
+            <div class="p-1">
+                <div class="is-variable">
+                    <div class="is-10">
+                        <div class="section">
+
+                            <div class="card card box-shadow has-background-black">
+                                <div class="card-header">
+                                    <p class="card-header-title box-shadow-p has-text-white">Personal Info
+                                        <button class="button is-info is-dark is-responsive ml-4"
+                                            onclick="popUpModel()">
+                                            Edit
+                                        </button>
+                                    </p>
+
+                                </div>
+
+                                <div class="card-content is-justify-content-flex-start is-flex">
+                                    <div>
+                                        <div class="field">
+                                            <p class="control has-icons-left has-text-white user-email">Username:
+                                            </p>
+                                        </div>
+                                        <div class="field">
+                                            <p class="control has-icons-left has-text-white user-number">Email:
+                                            </p>
+                                        </div>
+                                        <div class="field">
+                                            <p class="control has-icons-left has-text-white user-phone">Phone Number:
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end user info card -->
+    </div>
+    <!--user info section -->
+
+    <!-- script links -->
+    <script src="/js/side.js"></script>
+    <script src="/js/localStorage.js"></script>
+    <script src="/js/style.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
